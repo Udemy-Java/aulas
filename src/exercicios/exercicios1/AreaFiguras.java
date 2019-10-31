@@ -20,8 +20,11 @@ public class AreaFiguras {
 		double a, b, c, pi = 3.14159;
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.print("Digite o valor de 'a': ");
 		a = sc.nextDouble();
+		System.out.print("Digite o valor de 'b': ");
 		b = sc.nextDouble();
+		System.out.print("Digite o valor de 'c': ");
 		c = sc.nextDouble();
 		
 		System.out.printf("TRIANGULO: %.2f%n", a * c / 2);
