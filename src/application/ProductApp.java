@@ -16,11 +16,12 @@ public class ProductApp {
 		String name = sc.nextLine();
 		System.out.print("Price: ");
 		double price = sc.nextDouble();
-		System.out.print("Quantity in stock: ");
-		int quantity = sc.nextInt();
+// Sem indicar quantity utiliza o construtor sobrecarregado
+//		System.out.print("Quantity in stock: ");
+//		int quantity = sc.nextInt();
 		System.out.println();
 
-		entities.Product p = new Product(name, price, quantity);
+		entities.Product p = new Product(name, price);
 		
 		System.out.println("Product data: " + p);
 		System.out.println();
@@ -37,6 +38,12 @@ public class ProductApp {
 		System.out.println();
 
 		System.out.println("Updated data: " + p);
+		
+		p.setName("Computer");
+		System.out.println("Updated name: " + p.getName());
+		
+		p.setPrice(1200);
+		System.out.println("Updated price: " + p.getPrice());
 
 		sc.close();
 	}
