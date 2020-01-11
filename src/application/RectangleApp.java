@@ -13,8 +13,8 @@ public class RectangleApp {
 		Rectangle r = new Rectangle();
 		
 		System.out.println("Enter the rectangle width and height:");
-		r.a = sc.nextDouble();
-		r.b = sc.nextDouble();
+		r.setA(sc.nextDouble());
+		r.setB(sc.nextDouble());
 		
 		System.out.printf("AREA = %.2f%n", r.area());
 		System.out.printf("PERIMETER = %.2f%n", r.perimeter());

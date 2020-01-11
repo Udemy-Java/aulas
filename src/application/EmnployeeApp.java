@@ -11,13 +11,13 @@ public class EmnployeeApp {
 		Employee emp = new Employee();
 		
 		System.out.print("Name: ");
-		emp.name = sc.nextLine();
+		emp.setName(sc.nextLine());
 		
 		System.out.print("Gross salary: ");
-		emp.grossSalary = sc.nextDouble();
+		emp.setGrossSalary(sc.nextDouble());
 		
 		System.out.print("Tax: ");
-		emp.tax = sc.nextDouble();
+		emp.setTax(sc.nextDouble());
 		
 		System.out.println();
 		System.out.println(emp);

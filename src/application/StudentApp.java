@@ -12,16 +12,16 @@ public class StudentApp {
 		Student s = new Student();
 		
 		System.out.print("Name: ");
-		s.name = sc.nextLine();
+		s.setName(sc.nextLine());
 		
 		System.out.print("Grade 1: ");
-		s.grade1 = sc.nextDouble();
+		s.setGrade1(sc.nextDouble());
 		
 		System.out.print("Grade 2: ");
-		s.grade2 = sc.nextDouble();
+		s.setGrade2(sc.nextDouble());
 		
 		System.out.print("Grade 3: ");
-		s.grade3 = sc.nextDouble();
+		s.setGrade3(sc.nextDouble());
 		
 		System.out.println();
 		System.out.printf("FINAL GRADE = %.2f%n", s.finalGrade());
