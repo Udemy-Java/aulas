@@ -36,11 +36,11 @@ public class ContaBancaria {
 	}
 
 	public void deposito(double valorDeposito) {
-		this.saldo += valorDeposito;
+		saldo += valorDeposito;
 	}
 	
 	public void saque(double valorSaque) {
-		this.saldo -= valorSaque + TARIFA_SAQUE;
+		saldo -= valorSaque + TARIFA_SAQUE;
 	}
 
 	public int getNumero() {
